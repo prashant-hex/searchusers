@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-div{
+  height: 100vh;
+  background-color: rgb(51, 153, 128);
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-div{
+  height: 100px;
+  padding: 80px;
+  margin-left: -100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-div .search-text{
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.main-cards{
+  height: 500px;
+  /* border: 1px solid greenyellow; */
+  margin: 50px;
+  overflow-y: scroll;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-cards .mycards{
+  height: 200px;
+  background-color: #fff;
+  margin: 50px;
+  border-radius: 10px;
+}
+.mycards:hover{
+  color:#fff;
+ /* background-color: rgb(27, 28, 27); */
+ background-image: linear-gradient(#282A3A, #000000);
+ transition: all .5s;
+ transform: scale(1.1);
+}
+
+.main-cards .mycards img{
+  height: 80px;
+  width: 80px;
+}
+.main-cards .mycards img:hover{
+  transform:scale(1.2) ;
+}
+.main-cards .mycards{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  cursor: pointer;
+}
+.main-cards .mycards p{
+  font-weight: bold;
+}
+
+.form-control{
+  width: 40%;
 }
